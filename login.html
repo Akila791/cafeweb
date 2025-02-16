@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - The Gallery Café</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    body {
+        background: url(image/background1.jpg)center/cover no-repeat;
+       }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="image/logo.jpg" alt="Gallery Cafe Logo">
+            </div>
+            <ul>
+      
+                <li><a href="index.html">Home</a></li>
+                <li><a href="php/menu.php">Menus</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="promotion.html">Promotion</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="staff_login.html">staff</a></li>
+                <li><a href="admin_login.html">admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="login-form">
+            <h1>Login</h1>
+           
+            <form action="php/login.php" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            
+                <button type="submit">Login</button>
+            </form>
+            
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </section>
+    </main>
+    
+  
+</body>
+</html>
+

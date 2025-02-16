@@ -1,0 +1,582 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: url(image/background3.jpg)center/cover no-repeat;
+}
+
+header nav{
+    background: url(image/background4.jpg)center/cover no-repeat;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    font-family: 'Georgia', serif;
+    font-size: 1rem; 
+    font-weight: bold; 
+    color: #000000; 
+    text-decoration: none; 
+    padding: 10px 15px;
+    border-radius: 10px; 
+    transition: all 0.3s ease; 
+ 
+   
+}
+
+header nav ul li a:hover {
+    background-color: #2173b688;
+    box-shadow: 0 8px 16px rgb(0, 0, 0);
+}
+
+
+header .logo img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 5px;
+    background-color: #fff;
+}
+
+header .logo img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgb(0, 0, 0);
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    
+}
+
+main .home img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: center
+}
+
+.home h1 {
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+    color: #0011ff;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    line-height: 1.2;
+    transition: transform 0.3s ease;
+}
+
+.home h1:hover {
+    transform: scale(1.1);
+    text-shadow: #000000;
+}
+
+main .home h1 span {
+    color: #127c50; 
+}
+
+h1{
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+    color: #0011ff;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    line-height: 1.2;
+    transition: transform 0.3s ease;
+
+}
+
+ h1:hover{
+    transform: scale(1.1);
+    text-shadow: #000000;
+
+}
+
+ .login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-form button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #d35400;
+}
+
+.login-form p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login-form p button {
+    background: none;
+    border: none;
+    color: #e67e22;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: inherit;
+}
+
+.login-form p button:hover {
+    color: #d35400;
+} 
+
+.register-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"],
+.register-form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.register-form button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-form button:hover {
+    background-color: #d35400;
+}
+
+.register-form p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.register-form p a {
+    color: #0011fa;
+    text-decoration: underline;
+}
+
+.register-form p a:hover {
+    color: #ff0000;
+}
+
+#order {
+    background: url(image/background.jpg)center/cover no-repeat;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#order p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+
+#order form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgb(255, 0, 0);
+    border-radius: 10px;
+    border-top: 5px solid #333;
+}
+
+#order h2 {
+    color: #333;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#order label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#order input[type="text"],
+#order input[type="email"],
+#order input[type="tel"],
+#order input[type="number"],
+#order textarea,
+#order select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#order select {
+    height: 100px; 
+}
+
+#order button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#order button:hover {
+    background-color: #d35400;
+}
+
+#reservation {
+    max-width: 600px;
+    background: url(image/background.jpg)center/cover no-repeat;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#reservation form {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgb(255, 0, 0);
+    border-radius: 10px;
+    border-top: 5px solid #333;
+}
+
+
+#reservation label {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+#reservation input, #reservation textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #b9b7b7;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+#reservation button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#reservation button:hover {
+    background-color: #d35400;
+}
+
+
+
+.box {
+    width: 80%;
+    margin: 15px auto;
+}
+  
+ .box .card {
+    width: 280px;
+    box-shadow: 0 0 8px #6c14d0;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+    background: #f6f6f6;
+    display: grid;
+    display: block;
+  
+  }
+  
+.box .card .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ .box .card .image img {
+    width: 200px;
+    margin: 10px 0;
+    transition: 0.3s;
+  }
+  
+.box .card:hover .image img {
+    transform: scale(1.1);
+  }
+  
+.box .card .products_text h2 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  
+.box .card .products_text p {
+    color: #7a787891;
+    line-height: 10px;
+    margin: 8px 0;
+  }
+.box .card .products_text h3 {
+    margin: 7px 0;
+  }
+
+.box .card .products_text .btn {
+    text-decoration: none;
+    padding: 4px 20px;
+    background: linear-gradient(to right, #887abd, #133fcf);
+    color: rgb(255, 255, 255);
+    align-items: center;
+  }
+  
+  .about {
+    background: url(image/background.jpg)center/cover no-repeat;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+
+
+.about-content {
+    line-height: 1.8;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+    
+  
+} 
+
+.regis-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.regis-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.regis-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.regis-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.regis-form input[type="text"],
+.regis-form input[type="email"],
+.regis-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.regis-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.regis-form button:hover {
+    background-color: #555;
+}
+
+
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%; 
+    }
+}
+
+footer {
+    background-color: #474040;
+    color: #eebbbbbb;
+    text-align: center;
+    padding: 10px 0;
+    position: relatie;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Promotion Section */
+.promotion-section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.promotion-section h1 {
+    font-size: 2rem;
+    color: #080cff;
+    margin-bottom: 20px;
+}
+
+.promotion-section h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: #080cff;
+}
+
+.promotion-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.promotion-section p {
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.promotion-section img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.promotion-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.promotion-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 calc(33% - 40px);
+    box-sizing: border-box;
+}
+
+.promotion-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.promotion-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #127c50;
+}
+
+.promotion-card p {
+    margin-bottom: 10px;
+    color: #555;
+}

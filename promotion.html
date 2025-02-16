@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotions - The Gallery Café</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+
+    body{
+        background: url(image/background1.jpg)center/cover no-repeat;
+    }
+    .promotion-section {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        
+    }
+    
+    .promotion-section h1 {
+        font-size: 2rem;
+        color: #080cff;
+        margin-bottom: 20px;
+    }
+    
+    .promotion-section h2 {
+        font-size: 1.8rem;
+        margin-top: 20px;
+        color: #080cff;
+    }
+    
+    .promotion-section h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    .promotion-section p {
+        margin-bottom: 20px;
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    .promotion-section img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .promotion-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .promotion-card {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        flex: 1 1 calc(33% - 40px);
+        box-sizing: border-box;
+    }
+    
+    .promotion-card img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .promotion-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #127c50;
+    }
+    
+    .promotion-card p {
+        margin-bottom: 10px;
+        color: #555;
+    }</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="image/logo.jpg" alt="Gallery Cafe Logo">
+            </div>
+            <ul>
+           
+                <li><a href="index.html">Homes</a></li>
+                <li><a href="php/menu.php">Menus</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="parking.html">parking </a></li>
+                <li><a href="promotion.html">Promotions</a></li>
+                <li><a href="login.html">Login</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="promotion">
+            <div class="promotion-section">
+                <h1>Special Promotions at The Gallery Café</h1>
+                <div class="promotion-content">
+                    <p>Welcome to our promotions page! At The Gallery Café, we love to surprise our guests with special offers and exclusive deals. Whether you are a regular visitor or a first-timer, we have something for everyone to enjoy.</p>
+                    
+                    <h2>Current Promotions</h2>
+                    <div class="promotion-cards">
+                        <div class="promotion-card">
+                            <h3>Weekend Brunch Special</h3>
+                            <img src="image/pizzza.jpg" alt="Weekend Brunch Special">
+                            <p>Join us every Saturday and Sunday from 10 AM to 2 PM for our special brunch menu. Enjoy a selection of breakfast favorites, refreshing beverages, and delightful desserts at a discounted price.</p>
+                        </div>
+                        <div class="promotion-card">
+                            <h3>Happy Hour</h3>
+                            <img src="image/sweet.jpg" alt="Happy Hour">
+                            <p>Relax after a long day with our Happy Hour deals. From 5 PM to 7 PM, enjoy 50% off on all beverages, including our signature cocktails, mocktails, and a wide selection of wines and beers.</p>
+                        </div>
+                        <div class="promotion-card">
+                            <h3>Student Discount</h3>
+                            <img src="image/rice.jpg" alt="Student Discount">
+                            <p>Students can enjoy a 15% discount on all menu items from Monday to Friday. Just present a valid student ID to avail of this offer.</p>
+                        </div>
+                    </div>
+                    
+                    <h2>Upcoming Events</h2>
+                    <img src="image/lasagna.jpg" alt="Upcoming Events">
+                    <p>Stay tuned for more exciting promotions and events at The Gallery Café. Follow us on social media and sign up for our newsletter to be the first to know about our latest offers and happenings.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 The Gallery Café. All rights reserved.</p>
+    </footer>
+</body>
+</html>

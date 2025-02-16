@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - The Gallery Café</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+    
+    body{
+        
+        background: url(image/background1.jpg)center/cover no-repeat;
+    }
+    
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="image/logo.jpg" alt="Gallery Cafe Logo">
+            </div>
+            <ul>
+           
+                <li><a href="index.html">Homes</a></li>
+                <li><a href="php/menu.php">Menus</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="parking.html">parking </a></li>
+                <li><a href="promotion.html">Promotions</a></li>
+                <li><a href="login.html">Login</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="order">
+            <h1>Order Online</h1>
+            <p>Order your favorite items from The Gallery Café.</p>
+            <form action="php/order.php" method="post">
+                <h2>Your Details</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <h2>Your Order</h2>
+                <label for="items">Select Items:</label>
+                <select id="items" name="items[]" multiple required>
+                    <option value="coffee">Coffee</option>
+                    <option value="tea">Tea</option>
+                    <option value="cake">Cake</option>
+                    <option value="sandwich">Sandwich</option>
+                    <option value="salad">Salad</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <label for="requests">Special Requests:</label>
+                <textarea id="requests" name="requests"></textarea>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 The Gallery Café. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+    
+   
